@@ -24,7 +24,7 @@ export default function App() {
 
             if (localStorage.getItem(localKey)) {
                 const apiData = JSON.parse(localStorage.getItem(localKey))
-                console.log(apiData)
+                // console.log(apiData)
                 setData(apiData)
                 return
             }
@@ -32,6 +32,8 @@ export default function App() {
 
             try {
                 const response = await fetch(url)
+                // console.log(response)
+
                 const apiData = await response.json()
                 localStorage.setItem(localKey, JSON.stringify(apiData))
                 setData(apiData)
