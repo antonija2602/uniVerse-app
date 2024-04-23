@@ -8,13 +8,13 @@ export default function SideBar(props) {
             <div
                 onClick={toggleSideBar}
                 className="flex-1  bg-transparent"></div>
-            <div className=" right-0 z-20  ml-auto flex   h-full w-5/6 max-w-7xl flex-col gap-12 overflow-y-auto   bg-slate-800 px-5 py-10 opacity-90 shadow-[0_0_20px_25px_rgba(0,0,0,0.1)] shadow-slate-800  ">
+            <div className=" right-0 z-20  ml-auto flex   h-full w-5/6 max-w-7xl flex-col gap-2 md:gap-4 overflow-y-auto   bg-slate-800 px-5 py-10 opacity-90 shadow-[0_0_20px_25px_rgba(0,0,0,0.1)] shadow-slate-800  ">
                 {/* class sidebar */}
 
                 {/* class bgOverlay */}
 
                 {/* class sidebarContents */}
-                <h2 className=" xl:text-6xl font-semibold md:text-5xl  text-slate-100 text-4xl ">
+                <h2 className=" xl:text-6xl font-semibold md:text-5xl  text-slate-100 text-4xl pb-4">
                     {data?.title}
                 </h2>
                 <p className="text-slate-100 text-1xl font-thin  xl:text-2xl">
